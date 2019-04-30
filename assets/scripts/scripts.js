@@ -80,19 +80,9 @@ $(document).ready(function() {
       $(".inventory").hide();
       $("#invbutton").css({"border-bottom": "0px solid #ff9090"});
       $(".map").show();
-      $("#carousel-container").show();
-      $("#carousel-strip").show();
-      $(".carousel-section").show();
-      $("#left").show(); 
-      $("#right").show();
       $("#mapbutton").css({"border-bottom": "4px solid #ff9090"});
   });
   $("#homebutton").click(function(){
-      $("#carousel-container").hide();
-      $("#carousel-strip").hide();
-      $(".carousel-section").hide();
-      $("#left").hide(); 
-      $("#right").hide();
       $(".inventory").hide();
       $("#invbutton").css({"border-bottom": "0px solid #ff9090"});
       $(".map").hide();
@@ -101,11 +91,6 @@ $(document).ready(function() {
       $("#homebutton").css({"border-bottom": "4px solid #ff9090"});
   });
   $("#invbutton").click(function(){
-      $("#carousel-container").hide();
-      $("#carousel-strip").hide();
-      $(".carousel-section").hide();
-      $("#left").hide(); 
-      $("#right").hide();
       $(".map").hide();
       $("#mapbutton").css({"border-bottom": "0px solid #ff9090"});
       $(".home").hide();
@@ -276,7 +261,12 @@ $(document).ready(function() {
   });
 
 
-
+  $(".increasebutton4").click(function(){
+    deathFunc();
+  })
+  $(".increasebutton5").click(function(){
+    winFunc();
+  })
 
 
 
