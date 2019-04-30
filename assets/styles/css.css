@@ -1,0 +1,393 @@
+
+
+div {
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+#border {
+  border: 5px solid #ff9090;
+  border-radius: 20px;
+  height: 800px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.navbutton {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  
+}
+.navbutton {
+  cursor: pointer;
+  
+}
+#homebutton {
+  border-bottom: 4px solid #ff9090;
+}
+#invbutton {
+  border-bottom: 0px solid #ff9090;
+  display: none;
+}
+#mapbutton {
+  border-bottom: 0px solid #ff9090;
+  display: none;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.counters {
+  display: flex;
+  justify-content: center;
+}
+#counter {
+  margin-left: 50px;
+}
+.counter{
+  font-size: 40px;
+  width: 1800px;
+}
+.counter2{
+  display: none;
+}
+.counter3{
+  display: none;
+}
+.health{
+  color: red;
+  margin-left: 50px;
+}
+
+.resourcebutttons{
+  display: flex;
+  flex-direction: row;
+  display: none;
+}
+
+#infectedinc{
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  border: solid black;
+  border-width: 1px;
+  box-shadow: 0px 0px #888888;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+  display: none;
+}
+
+#infectedinc:hover{
+  box-shadow: 3px 4px #888888;
+  border-width: 2px;
+  cursor: pointer;
+}
+#infectedinc2{
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  border: solid black;
+  border-width: 1px;
+  box-shadow: 0px 0px #888888;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+  display: none;
+}
+#infectedinc2:hover{
+  box-shadow: 3px 4px #888888;
+  border-width: 2px;
+  cursor: pointer;
+}
+#disasterinc{
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  border: solid black;
+  border-width: 1px;
+  box-shadow: 0px 0px #888888;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+  display: none;
+}
+#disasterinc:hover{
+  box-shadow: 3px 4px #888888;
+  border-width: 2px;
+  cursor: pointer;
+  }
+.tooltips {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  color: #FFFFFF;
+  background-color: #383838;
+  text-align: center;
+  border-radius: 10px;
+  width: 140px;
+  position: absolute;  
+  padding: 6px;
+  z-index: 1;
+}
+
+.tooltips:hover .tooltip-text {
+  visibility: visible;
+}
+.buttonscontainer{
+  position: relative;
+}
+.buttons{
+  position: absolute;
+  left: 55%;
+  top: 75%;
+}
+.fightbutton {
+  display: none;
+  border: solid black;
+  border-width: 1px;
+  box-shadow: 0px 0px #888888;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+}
+.fightbutton:hover {
+  box-shadow: 3px 4px #888888;
+  border-width: 2px;
+  cursor: pointer;
+
+}
+
+.nofightbutton {
+  margin-top: 7px;
+  display: none;
+  border: solid black;
+  border-width: 1px;
+  box-shadow: 0px 0px #888888;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+}
+.nofightbutton:hover {
+  box-shadow: 3px 4px #888888;
+  border-width: 2px;
+  cursor: pointer;
+
+}
+#gameplay_text {
+  width: 400px;
+  position: absolute;
+  left: 55%;
+  top: 30%;
+}
+#gameplay_text2 {
+  width: 400px;
+  position: absolute;
+  left: 55%;
+  top: 60%;
+  
+}
+
+
+.inventory{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.mainhandweapon, .offhandweapon{
+  font-size: 14px;
+  transition: font-size 0.1s linear;
+  display: none;
+
+}
+
+.mainhandweapon:hover, .offhandweapon:hover{
+  font-size: 115%;
+  cursor: pointer;
+
+}
+
+#mainhand-title, #offhand-title {
+  font-size: 40px;
+  margin-top: 35px;
+}
+
+
+
+#carousel-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  height: 450px;
+  width: 450px;
+  overflow: hidden;
+}
+
+#carousel-strip {
+  transition: 0.4s;
+  position: absolute;
+  left: 0px;
+  display: flex;
+  /* YOUR CODE HERE */
+}
+
+.carousel-section {
+  height: 450px;
+  width: 450px;
+  position: relative;
+  /* YOUR CODE HERE */
+}
+
+.carousel-section img {
+  width: 450px;
+}
+
+/* Don't touch the code below !! */
+#left, #right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 3;
+  padding: 20px;
+  font-size: 48px;
+  color: black;
+}
+
+#left {
+  left: calc(50% - 50vh);
+}
+
+#right {
+  right: calc(50% - 50vh);
+}
+
+#title{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+#subtitle{
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.playbuttons{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#playbutton {
+  margin-top: 7px;
+  border: solid black;
+  border-width: 1px;
+  box-shadow: 0px 0px #888888;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+
+}
+#playbutton:hover {
+  box-shadow: 3px 4px #888888;
+  border-width: 2px;
+  cursor: pointer;
+}
+#playtestbutton {
+  margin-top: 7px;
+  border: solid black;
+  border-width: 1px;
+  box-shadow: 0px 0px #888888;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+}
+#playtestbutton:hover {
+  box-shadow: 3px 4px #888888;
+  border-width: 2px;
+  cursor: pointer;
+}
+#reaperimg {
+  position: absolute;
+  top:25%;
+  z-index: -1;
+}
+
+.startscreen{
+  position: relative;
+}
+
+.devbuttons {
+  display: none;
+}
+
+.endtext{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#losetext1, #losetext2 {
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+#okbutton {
+  display: none;
+  color: white;
+  margin-top: 7px;
+  border: solid white;
+  border-width: 1px;
+  box-shadow: 0px 0px #A9A9A9;
+  text-align: center;
+  border-radius: 10px;
+  border-spacing: 4px;
+  transition: box-shadow 0.1s linear;
+  transition: border-width 0.1s linear;
+  padding: 3px;
+
+}
+
+#okbutton:hover {
+  box-shadow: 3px 4px #A9A9A9;
+  border-width: 2px;
+  cursor: pointer;
+}
+

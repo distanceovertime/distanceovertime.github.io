@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="./assets/styles/css.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="./assets/scripts/scripts.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet">
+	</head>
+	<body>
+		<div class="endtext">
+				<div id="losetext1">YOU DIED.</div>
+				<div id="losetext2">LIFE ITSELF HAS BEEN DEFEATED. YOU WIN.</div>
+				<div id="okbutton">ok</div>
+		</div>
+		<div id="border">
+			<div class="header">
+				<div class="navbutton" id="homebutton">Home</div>
+				<div class="navbutton" id="invbutton">Inventory</div>
+				<div class="navbutton" id="mapbutton">Map</div>
+			</div>
+			<div class = "startscreen">
+				<div id="title">Soul Catcher!</div>
+				<div id="subtitle">You are death. Take what's yours.</div>
+				<div class="playbuttons">
+					<div id="playbutton">Play!</div>
+					<div id="playtestbutton">Test Mode</div>
+					<div id="playtesttext">[in test mode, all features are unlocked at start for grading purposes; </div>
+					<div id="playtesttext">gameplay might be buggy]</div>
+				</div>
+				<img id="reaperimg" src="assets/img/reaper.jpg">
+			</div>
+			
+			<div class="home">
+				<div id="counters">
+					<div id="counter">
+						<p class="counter"></p>
+					</div>
+					<div id="counter">
+						<p class="counter2"></p>
+					</div>
+					<div id="counter">
+						<p class="counter3"></p>
+					</div>
+					<div id="health">
+						<p class="health"></p>
+					</div>
+				</div>
+				<div id="gameplay_elements">
+					<p id="gameplay_text"></p>	
+					<div class="resourcebutttons">
+						<div id="infectedinc" class="tooltips">+1 population/-100 souls
+  							<span class="tooltip-text">Each infected population increases soul catch rate by 5%.</span>
+						</div>
+						<div id="infectedinc2" class="tooltips">+100 population/-10000 souls
+  							<span class="tooltip-text">5%? Try 500.</span>
+						</div>
+						<div id="disasterinc" class="tooltips">+1 natural disaster/-250 population
+  							<span class="tooltip-text">A natural disaster requires sacrifices but always delivers a profit.</span>
+						</div>
+					</div>	
+					<p id="gameplay_text2"></p>
+					<div id="buttonscontainer">
+						<div class="buttons">
+							<div class="fightbutton"> fight </div>						<div class="nofightbutton"> don't fight </div>
+							<div class="devbuttons">
+								<div class="increasebutton"> increase </div>
+								<div class="decreasebutton"> decrease </div>
+								<div class="increasebutton2"> increase2 </div>
+								<div class="decreasebutton2"> decrease2 </div>
+								<div class="increasebutton2"> increase3 </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="inventory">
+				<div class="mainhand">
+					<div id="mainhand-title">mainhand</div>
+					<div id="currently-equipped1">currently equipped: none</div>
+						<div class="mainhandweapon" id="weapon1">scythe (+ 1 soul/sec)</div>
+						<div class="mainhandweapon" id="weapon2">vitality shield (+ 1 health/sec)</div>
+						<div class="mainhandweapon" id="weapon2.5">viralmancer (+ 6 population/sec)</div>
+						<div class="mainhandweapon" id="weapon3">deepsword (+ 25 damage & + 25 max health)</div>
+						<div class="mainhandweapon" id="weapon4">bow of acceleration (+ 400000 souls/sec)</div>
+						<div class="mainhandweapon" id="weapon5">earthshaking hammer (+ 250 population/sec)</div>
+						<div class="mainhandweapon" id="weapon6">ultibreaker (+ 1 natural disaster/sec)</div>
+						<div class="mainhandweapon" id="weapon7">butterknife (+ 200 damage & + 500 max health)</div>
+						<div class="mainhandweapon" id="weapon8">endbringer (+ 1000 damage & + 1000 max health)</div>
+				</div>
+			</div>
+			<div class="map">
+				<div id="lightbox">
+					<div id="overlay"></div>
+					<div id="left"> &lt; </div>
+					<div id="carousel-container">
+						<div id="carousel-strip">
+							<div class="carousel-section"><img src="assets/img/1.png"></div>
+							<div class="carousel-section"><img src="assets/img/2.png"></div>
+							<div class="carousel-section"><img src="assets/img/3.png"></div>
+							<div class="carousel-section"><img src="assets/img/4.jpg"></div>
+							<div class="carousel-section"><img src="assets/img/5.png"></div>
+							<div class="carousel-section"><img src="assets/img/6.png"></div>
+							<div class="carousel-section"><img src="assets/img/7.png"></div>
+							<div class="carousel-section"><img src="assets/img/8.png"></div>
+							<div class="carousel-section"><img src="assets/img/9.png"></div>
+						</div>
+					</div>
+					<div id="right"> &gt; </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
