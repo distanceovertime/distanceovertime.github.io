@@ -249,6 +249,7 @@ div {
   height: 450px;
   width: 450px;
   overflow: hidden;
+  display: none;
 }
 
 #carousel-strip {
@@ -256,21 +257,20 @@ div {
   position: absolute;
   left: 0px;
   display: flex;
-  /* YOUR CODE HERE */
+  display: none;
 }
 
 .carousel-section {
   height: 450px;
   width: 450px;
   position: relative;
-  /* YOUR CODE HERE */
+  display: none;
 }
 
 .carousel-section img {
   width: 450px;
 }
 
-/* Don't touch the code below !! */
 #left, #right {
   position: absolute;
   top: 50%;
@@ -284,10 +284,12 @@ div {
 
 #left {
   left: calc(50% - 50vh);
+  display: none;
 }
 
 #right {
   right: calc(50% - 50vh);
+  display: none;
 }
 
 #title{
